@@ -8,13 +8,14 @@ typedef struct {
     int last;
     datatype data[DATASIZE];
 }sqlist;
-
+//
 sqlist* sqlist_creat();
 void sqlist_creat_(sqlist **sqlistprt);
 int sqlist_destry(sqlist *);
 int sqlist_insert(sqlist *, int index, datatype *);
+void sqlist_display(sqlist *);
 int sqlist_delete(sqlist *, int index);
-int sqlist_fine(sqlist *, datatype *);
+int sqlist_find(sqlist *, datatype *);
 int sqlit_isempty(sqlist *);
 int sqlit_setempty(sqlist *);
 int sqlist_getnum(sqlist *);
